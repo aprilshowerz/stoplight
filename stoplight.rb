@@ -13,9 +13,9 @@ def create_stoplight_array()
 			create_stoplight_array << 'Red'
 
 		elsif number %5 == 0
-			stoplight_array << 'Yellow'
+			create_stoplight_array << 'Yellow'
 		else
-			stoplight_array << number
+			create_stoplight_array << number
 		end
 
 	number = number + 1
