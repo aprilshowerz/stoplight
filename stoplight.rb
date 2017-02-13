@@ -1,9 +1,5 @@
 def stoplight_result(number)
-	if number == 1
-		number
-	end
-end
-
+	
 number = 1
 
 100.times do
@@ -20,4 +16,5 @@ number = 1
 		puts number
 	end
 		number = number + 1
+	end
 end
