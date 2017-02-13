@@ -1,20 +1,24 @@
-def stoplight_result(number)
-	
-number = 1
+def create_stoplight_array()
+	create_stoplight_array = []
 
-100.times do
+	number = 1
+	100.times do
 
-	if number %3 == 0 && number %5 ==0  
-	# or you could use: 
-	# if number %15 == 0
-			puts "Green"
-	elsif number %3 == 0
-			puts "Red"
-	elsif number %5 == 0
-			puts "Yellow"
-	else
-		puts number
+		if number %3 == 0 && number %5 ==0  
+		# or you could use: 
+		# if number %15 == 0
+			create_stoplight_array << 'Green'
+
+		elsif number %3 == 0
+			create_stoplight_array << 'Red'
+
+		elsif number %5 == 0
+			stoplight_array << 'Yellow'
+		else
+			stoplight_array << number
+		end
+
+	number = number + 1
 	end
-		number = number + 1
-	end
+	return create_stoplight_array
 end
